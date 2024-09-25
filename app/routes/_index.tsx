@@ -39,7 +39,8 @@ export default function Index() {
               <img
                 src={mon.img}
                 style={{ viewTransitionName: `pokemon-img-${mon.id}` }}
-                className="size-48"
+                className="size-24"
+                alt={`Pokemon Number ${mon.id}`}
               />
               <div
                 className="text-center text-sm text-white/80"
