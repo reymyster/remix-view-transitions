@@ -1,5 +1,5 @@
 import { json, type LoaderFunctionArgs } from "@vercel/remix";
-import { useLoaderData } from "@remix-run/react";
+import { useLoaderData, Link } from "@remix-run/react";
 import invariant from "tiny-invariant";
 
 import { getPokemonList } from "~/pokemon";
@@ -24,6 +24,11 @@ export default function Pokemon() {
 
   return (
     <div className="h-screen flex flex-col items-center justify-center">
+      <div className="fixed top-0 left-0 p-8 text-xl">
+        <Link to={"/"} unstable_viewTransition>
+          &lt;- Back
+        </Link>
+      </div>
       <h1
         style={{ viewTransitionName: `pokemon-name-${pokemon.id}` }}
         className="text-2xl p-2"
