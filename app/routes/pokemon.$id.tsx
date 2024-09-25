@@ -40,7 +40,7 @@ export default function Pokemon() {
           src={pokemon.img}
           alt={pokemon.name}
           style={{ viewTransitionName: `pokemon-img-${pokemon.id}` }}
-          className="h-48"
+          className="size-96"
         />
       </div>
     </div>

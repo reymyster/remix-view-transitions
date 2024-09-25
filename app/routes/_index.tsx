@@ -38,12 +38,11 @@ export default function Index() {
             <Link to={`/pokemon/${mon.id}`} unstable_viewTransition>
               <img
                 src={mon.img}
-                alt={mon.name}
                 style={{ viewTransitionName: `pokemon-img-${mon.id}` }}
-                className="h-24"
+                className="size-48"
               />
               <div
-                className="text-center text-sm"
+                className="text-center text-sm text-white/80"
                 style={{ viewTransitionName: `pokemon-name-${mon.id}` }}
               >
                 {mon.name}
